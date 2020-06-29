@@ -6,10 +6,10 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPOM {
+public class RecoverPasswordPOM {
 	private WebDriver driver; 
 	
-	public LoginPOM(WebDriver driver) {
+	public RecoverPasswordPOM(WebDriver driver) {
 		this.driver = driver; 
 		PageFactory.initElements(driver, this);
 	}
@@ -20,14 +20,17 @@ public class LoginPOM {
 	@FindBy(xpath="//span[contains(text(),'LOGIN')]")
 	private WebElement loginRegister;
 	
+	@FindBy(xpath="//a[contains(text(),'Forgotten Password')]")
+	private WebElement forgotPassword;
+	
 	@FindBy(id="input-email")
 	private WebElement userName; 
 	
-	@FindBy(id="input-password")
-	private WebElement password;
-	
 	@FindBy(xpath="//input[@class='btn btn-primary']")
-	private WebElement loginBtn; 
+	private WebElement continueBtn; 
+	
+	@FindBy(xpath="//div[@class='alert alert-success']")
+	private WebElement alertSuccess; 
 	
 	
 	public void clickLoginRegisterBtn() {
@@ -36,17 +39,20 @@ public class LoginPOM {
 		this.loginRegister.click();
 	}
 	
+	public void clickForgotPasswordBtn() {
+		this.forgotPassword.click(); 
+	}
+	
 	public void sendUserName(String userName) {
 		this.userName.clear();
 		this.userName.sendKeys(userName);
 	}
 	
-	public void sendPassword(String password) {
-		this.password.clear(); 
-		this.password.sendKeys(password); 
+	public void clickContinueBtn() {
+		this.continueBtn.click(); 
 	}
 	
-	public void clickLoginBtn() {
-		this.loginBtn.click(); 
+	public String alertSuccessMessage() {
+		return this.alertSuccess.getText(); 
 	}
 }
