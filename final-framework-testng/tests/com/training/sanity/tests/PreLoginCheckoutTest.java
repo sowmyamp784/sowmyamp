@@ -12,15 +12,17 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.training.generics.ScreenShot;
-import com.training.pom.AdminLoginPOM;
+import com.training.pom.LoginPOM;
+import com.training.pom.PreLoginCheckoutPOM;
+import com.training.pom.RegisterPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
-public class AdminLoginTest {
+public class PreLoginCheckoutTest {
 
 	private WebDriver driver;
 	private String baseUrl;
-	private AdminLoginPOM adminLoginPOM;
+	private PreLoginCheckoutPOM preLoginCheckoutPOM;
 	private static Properties properties;
 	private ScreenShot screenShot;
 
@@ -36,7 +38,7 @@ public class AdminLoginTest {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
-		adminLoginPOM = new AdminLoginPOM(driver); 
+		preLoginCheckoutPOM = new PreLoginCheckoutPOM(driver); 
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver); 
 		// open the browser 
@@ -51,23 +53,35 @@ public class AdminLoginTest {
 	}
 	
 	/*
-	 * The Objective of this Test is to Login to Admin page with Admin Credentials
+	 * The Objective of this Test is to check user lands in Login Page before Checkout when the user is not logged into the retail application
 	 */
 	@Test
-	public void validAdminLoginTest() {
-		//Enter admin username
-		adminLoginPOM.sendUserName("admin");
-		//Enter admin password
-		adminLoginPOM.sendPassword("admin@123");
-		//click on Admin Login Button
-		adminLoginPOM.clickLoginBtn(); 
+	public void preLoginCheckout() {
+		//Click on Shop Link
+		preLoginCheckoutPOM.clickShopLink();
+		//Click on Ethnic Link
+		preLoginCheckoutPOM.clickEthnicLink();
+		//Sort the products to get the desired product
+		preLoginCheckoutPOM.sortBy();
+		//Click on the product
+		preLoginCheckoutPOM.clickProduct();
+		//Click on Quick view
+		preLoginCheckoutPOM.clickQuickView();
+		//Click on Add to cart
+		preLoginCheckoutPOM.clickAddToCartBtn();
+		//Click on Add to cart
+		preLoginCheckoutPOM.clickOnCart();
+		//Click on View cart
+		preLoginCheckoutPOM.clickViewCartBtn();
+		//Click on Checkout
+		preLoginCheckoutPOM.clickCheckoutBtn();
 		
-		String adminDashboard = driver.getTitle();
+		String newCustText = preLoginCheckoutPOM.newCustomerText();
 		
-		//Taking Screenshot for Admin Logged in Page
-		screenShot.captureScreenShot("Admin_Login");
+		//Take Screenshot of Pre Login Checkout Page
+		screenShot.captureScreenShot("Pre_Login_Checkout");
 		
-		//Assert to check user is in Admin Dashboard page after login
-		Assert.assertEquals("Dashboard", adminDashboard, "This is admin Dashboard");
+		//Assert to check user lands in New Customer screen
+		Assert.assertEquals("New Customer", newCustText);
 	}
 }
