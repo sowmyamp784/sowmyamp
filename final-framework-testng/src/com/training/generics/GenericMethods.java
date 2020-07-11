@@ -48,7 +48,7 @@ public class GenericMethods {
 		}else if(type.equals("classname")) {
 			element = driver.findElement(By.className(locator));
 		}else if(type.equals("partiallinktext")) {
-			element = driver.findElement(By.className(locator));
+			element = driver.findElement(By.partialLinkText(locator));
 		}
 			
 		if(checkSingleEntry(locator, type)){

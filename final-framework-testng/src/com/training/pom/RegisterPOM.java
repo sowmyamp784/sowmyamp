@@ -1,16 +1,11 @@
 package com.training.pom;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class RegisterPOM {
 	private WebDriver driver; 
@@ -143,15 +138,15 @@ public class RegisterPOM {
 	}
 	
 	//Method to select Country
-	public void selectCountry() {
+	public void selectCountry(String county) {
 		Select country = new Select(countryIdListbox);
-		country.selectByVisibleText("India");
+		country.selectByVisibleText(county);
 	}
 	
 	//Method to select Region
-	public void selectRegion() {
+	public void selectRegion(String reg) {
 		Select region = new Select(zoneIdListbox);
-		region.selectByVisibleText("Karnataka");
+		region.selectByVisibleText(reg);
 	}
 	
 	//Method to Enter Password
@@ -183,6 +178,7 @@ public class RegisterPOM {
 	
 	//Method to get the text when the Account is created
 	public String acctCreationMessage() {
-		return this.acctCreationConfirmText.getText(); 
+		//return this.acctCreationConfirmText.getText(); 
+		return driver.getTitle();
 	}
 }

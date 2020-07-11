@@ -46,6 +46,7 @@ public class ApachePOIExcelRead {
 			 
 			while (rowIterator.hasNext()) {
 				Row row = rowIterator.next();
+				
 				// For each row, iterate through all the columns
 				Iterator<Cell> cellIterator = row.cellIterator();
 
@@ -89,7 +90,7 @@ public class ApachePOIExcelRead {
 	}
 
 	public static void main(String[] args) {
-		String fileName = "C:/Users/Naveen/Desktop/Testing.xlsx";
+		String fileName = "C://Users//SowmyaMP//eclipse-workspace//SeleniumProjectManipal//TestData//TestData1.xlsx";
 		
 		for(String [] temp : new ApachePOIExcelRead().getExcelContent(fileName)){
 			for(String  tt : temp){

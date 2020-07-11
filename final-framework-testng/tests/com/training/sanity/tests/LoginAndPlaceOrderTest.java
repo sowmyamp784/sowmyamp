@@ -15,7 +15,6 @@ import com.training.generics.ScreenShot;
 import com.training.pom.LoginAndPlaceOrderPOM;
 import com.training.pom.LoginPOM;
 import com.training.pom.PreLoginCheckoutPOM;
-import com.training.pom.RegisterPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 

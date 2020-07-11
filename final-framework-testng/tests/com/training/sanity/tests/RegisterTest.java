@@ -12,7 +12,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.training.generics.ScreenShot;
-import com.training.pom.AdminLoginPOM;
 import com.training.pom.RegisterPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
@@ -65,7 +64,7 @@ public class RegisterTest {
 		//Pass lastname
 		registerPOM.sendLastName("MP");
 		//Pass E-mail Address
-		registerPOM.sendEmail("sowmya.mp5@gmail.com");
+		registerPOM.sendEmail("sowmya.mps00005@gmail.com");
 		//Pass Telephone
 		registerPOM.sendTelephone("9686830100");
 		//Pass Address1
@@ -77,9 +76,9 @@ public class RegisterTest {
 		//Pass Pincode
 		registerPOM.sendPostcode("560050");
 		//Select country
-		registerPOM.selectCountry();
+		registerPOM.selectCountry("India");
 		//Select Region
-		registerPOM.selectRegion();
+		registerPOM.selectRegion("Karnataka");
 		//Send Password
 		registerPOM.sendPassword("Test1234");
 		//Send Confirm Password
@@ -97,7 +96,7 @@ public class RegisterTest {
 		screenShot.captureScreenShot("Register");
 		
 		//Asserting to check whether the Account is created
-		Assert.assertEquals("Congratulations! Your new account has been successfully created!", acctCreationConfirmText);
+		Assert.assertEquals("Your Account Has Been Created!",acctCreationConfirmText);
 		
 	}
 }

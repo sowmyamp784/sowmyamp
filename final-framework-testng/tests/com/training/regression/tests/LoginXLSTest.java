@@ -8,15 +8,11 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.training.bean.LoginBean;
-import com.training.dao.ELearningDAO;
 import com.training.dataproviders.LoginDataProviders;
 import com.training.generics.ScreenShot;
 import com.training.pom.AdminLoginPOM;
-import com.training.readexcel.ReadExcel;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 

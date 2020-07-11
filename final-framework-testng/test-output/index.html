@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\SowmyaMP\AppData\Local\Temp\testng-eclipse-1682472609\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\SowmyaMP\git\sowmyamp\final-framework-testng\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,21 +93,105 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">16 methods, 1 failed,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.training.sanity.tests.RegisterExcelTest" class="method navigator-link" hash-for-method="registerDataExcelTest1(manzoor, mehadi, manzoor, 8906543210, electronic city, bangalore, bangalore, 560100, India, Karnatak...)">registerDataExcelTest1(manzoor, mehadi, manzoor, 8906543210, electronic city, bangalore, bangalore, 560100, India, Karnatak...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.training.sanity.tests.LoginAndPlaceOrderTest" class="method navigator-link" hash-for-method="loginCheckout">loginCheckout</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.training.sanity.tests.LoginTest" class="method navigator-link" hash-for-method="invalidLoginTest">invalidLoginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.training.sanity.tests.LoginAndPlaceOrderTest" class="method navigator-link" hash-for-method="loginCheckout">loginCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.training.sanity.tests.PreLoginCheckoutTest" class="method navigator-link" hash-for-method="preLoginCheckout">preLoginCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.training.sanity.tests.RecoveryPasswordTest" class="method navigator-link" hash-for-method="recoverPasswordTest">recoverPasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.training.sanity.tests.RegisterDBTest" class="method navigator-link" hash-for-method="registerDBTest(Sowmya, M P, sowmya10002@gmail.com, 9449590100, 123, 19th Main, Bangalore, 560045, India, Karnataka,...)">registerDBTest(Sowmya, M P, sowmya10002@gmail.com, 9449590100, 123, 19th Main, Bangalore, 560045, India, Karnataka,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.training.sanity.tests.RegisterDBTest" class="method navigator-link" hash-for-method="registerDBTest(Bhavana, S, bhavana10002@gmail.com, 9986590100, 784, 13th Main, Subash Nagar, 570001, India, Maharas...)">registerDBTest(Bhavana, S, bhavana10002@gmail.com, 9986590100, 784, 13th Main, Subash Nagar, 570001, India, Maharas...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.training.sanity.tests.RegisterExcelTest" class="method navigator-link" hash-for-method="registerDataExcelTest(priya, prabhu, priyarajmps10002@gmail.com, 8906754321, hyderabad, hyderabad, hyderabad, 620102, Indi...)">registerDataExcelTest(priya, prabhu, priyarajmps10002@gmail.com, 8906754321, hyderabad, hyderabad, hyderabad, 620102, Indi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.training.sanity.tests.RegisterExcelTest" class="method navigator-link" hash-for-method="registerDataExcelTest(sunil, nagaraj, sunilnagmps10002@gmail.com, 9876543210, yeshwanthapur, bangalore, bangalore, 560022,...)">registerDataExcelTest(sunil, nagaraj, sunilnagmps10002@gmail.com, 9876543210, yeshwanthapur, bangalore, bangalore, 560022,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.training.sanity.tests.RegisterExcelTest" class="method navigator-link" hash-for-method="registerDataExcelTest(manzoor, mehadi, mehadimps10002@gmail.com, 8906543210, electronic city, bangalore, bangalore, 560100...)">registerDataExcelTest(manzoor, mehadi, mehadimps10002@gmail.com, 8906543210, electronic city, bangalore, bangalore, 560100...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.training.sanity.tests.RegisterExcelTest" class="method navigator-link" hash-for-method="registerDataExcelTest(puli, keshi, pulimps10002@gmail.com, 6789043217, chennai, chennai, chennai, 561321, India, Tamil Nad...)">registerDataExcelTest(puli, keshi, pulimps10002@gmail.com, 6789043217, chennai, chennai, chennai, 561321, India, Tamil Nad...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.training.sanity.tests.RegisterExcelTest" class="method navigator-link" hash-for-method="registerDataExcelTest1(manipal, 1233423, manipalomps10002@gmail.com, 9876543210, yeshwanthapur, bangalore, bangalore, 56002...)">registerDataExcelTest1(manipal, 1233423, manipalomps10002@gmail.com, 9876543210, yeshwanthapur, bangalore, bangalore, 56002...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.training.sanity.tests.RegisterExcelTest" class="method navigator-link" hash-for-method="registerDataExcelTest1(puli, keshi, puliomps10002@gmail.com, sfgdfgdf, chennai, chennai, chennai, 561321, India, Tamil Nadu...)">registerDataExcelTest1(puli, keshi, puliomps10002@gmail.com, sfgdfgdf, chennai, chennai, chennai, 561321, India, Tamil Nadu...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.training.sanity.tests.RegisterExcelTest" class="method navigator-link" hash-for-method="registerDataExcelTest1(priya, prabhu, priyaomps10002@gmail.com, 8906754321, hyderabad, hyderabad, hyderabad, 9876547, India...)">registerDataExcelTest1(priya, prabhu, priyaomps10002@gmail.com, 8906754321, hyderabad, hyderabad, hyderabad, 9876547, India...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.training.sanity.tests.LoginTest" class="method navigator-link" hash-for-method="validLoginTest">validLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.training.sanity.tests.RegisterTest" class="method navigator-link" hash-for-method="validRegisterTest">validRegisterTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,8 +202,29 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.training.sanity.tests.RegisterExcelTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerDataExcelTest1(manzoor, mehadi, manzoor, 8906543210, electronic city, bangalore, bangalore, 560100, India, Karnatak...)">
+                  </a> <!-- registerDataExcelTest1(manzoor, mehadi, manzoor, 8906543210, electronic city, bangalore, bangalore, 560100, India, Karnatak...) -->
+                  <span class="method-name">registerDataExcelTest1</span>
+                  <span class="parameters">(manzoor, mehadi, manzoor, 8906543210, electronic city, bangalore, bangalore, 560100, India, Karnataka, manzoor, manzoor)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Register Account] but found [Your Account Has Been Created!]
+	at com.training.sanity.tests.RegisterExcelTest.registerDataExcelTest1(RegisterExcelTest.java:148)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.training.sanity.tests.LoginAndPlaceOrderTest</span>
@@ -133,110 +238,558 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.training.sanity.tests.RegisterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validRegisterTest">
+                  </a> <!-- validRegisterTest -->
+                  <span class="method-name">validRegisterTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.training.sanity.tests.PreLoginCheckoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="preLoginCheckout">
+                  </a> <!-- preLoginCheckout -->
+                  <span class="method-name">preLoginCheckout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.training.sanity.tests.RegisterDBTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerDBTest(Sowmya, M P, sowmya10002@gmail.com, 9449590100, 123, 19th Main, Bangalore, 560045, India, Karnataka,...)">
+                  </a> <!-- registerDBTest(Sowmya, M P, sowmya10002@gmail.com, 9449590100, 123, 19th Main, Bangalore, 560045, India, Karnataka,...) -->
+                  <span class="method-name">registerDBTest</span>
+                  <span class="parameters">(Sowmya, M P, sowmya10002@gmail.com, 9449590100, 123, 19th Main, Bangalore, 560045, India, Karnataka, Test1234, Test1234)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerDBTest(Bhavana, S, bhavana10002@gmail.com, 9986590100, 784, 13th Main, Subash Nagar, 570001, India, Maharas...)">
+                  </a> <!-- registerDBTest(Bhavana, S, bhavana10002@gmail.com, 9986590100, 784, 13th Main, Subash Nagar, 570001, India, Maharas...) -->
+                  <span class="method-name">registerDBTest</span>
+                  <span class="parameters">(Bhavana, S, bhavana10002@gmail.com, 9986590100, 784, 13th Main, Subash Nagar, 570001, India, Maharashtra, Test1234, Test1234)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.training.sanity.tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLoginTest">
+                  </a> <!-- invalidLoginTest -->
+                  <span class="method-name">invalidLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLoginTest">
+                  </a> <!-- validLoginTest -->
+                  <span class="method-name">validLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.training.sanity.tests.RecoveryPasswordTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="recoverPasswordTest">
+                  </a> <!-- recoverPasswordTest -->
+                  <span class="method-name">recoverPasswordTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.training.sanity.tests.RegisterExcelTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerDataExcelTest(priya, prabhu, priyarajmps10002@gmail.com, 8906754321, hyderabad, hyderabad, hyderabad, 620102, Indi...)">
+                  </a> <!-- registerDataExcelTest(priya, prabhu, priyarajmps10002@gmail.com, 8906754321, hyderabad, hyderabad, hyderabad, 620102, Indi...) -->
+                  <span class="method-name">registerDataExcelTest</span>
+                  <span class="parameters">(priya, prabhu, priyarajmps10002@gmail.com, 8906754321, hyderabad, hyderabad, hyderabad, 620102, India, Telangana, priya, priya)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerDataExcelTest(sunil, nagaraj, sunilnagmps10002@gmail.com, 9876543210, yeshwanthapur, bangalore, bangalore, 560022,...)">
+                  </a> <!-- registerDataExcelTest(sunil, nagaraj, sunilnagmps10002@gmail.com, 9876543210, yeshwanthapur, bangalore, bangalore, 560022,...) -->
+                  <span class="method-name">registerDataExcelTest</span>
+                  <span class="parameters">(sunil, nagaraj, sunilnagmps10002@gmail.com, 9876543210, yeshwanthapur, bangalore, bangalore, 560022, India, Karnataka, manipal, manipal)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerDataExcelTest(manzoor, mehadi, mehadimps10002@gmail.com, 8906543210, electronic city, bangalore, bangalore, 560100...)">
+                  </a> <!-- registerDataExcelTest(manzoor, mehadi, mehadimps10002@gmail.com, 8906543210, electronic city, bangalore, bangalore, 560100...) -->
+                  <span class="method-name">registerDataExcelTest</span>
+                  <span class="parameters">(manzoor, mehadi, mehadimps10002@gmail.com, 8906543210, electronic city, bangalore, bangalore, 560100, India, Karnataka, manzoor, manzoor)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerDataExcelTest(puli, keshi, pulimps10002@gmail.com, 6789043217, chennai, chennai, chennai, 561321, India, Tamil Nad...)">
+                  </a> <!-- registerDataExcelTest(puli, keshi, pulimps10002@gmail.com, 6789043217, chennai, chennai, chennai, 561321, India, Tamil Nad...) -->
+                  <span class="method-name">registerDataExcelTest</span>
+                  <span class="parameters">(puli, keshi, pulimps10002@gmail.com, 6789043217, chennai, chennai, chennai, 561321, India, Tamil Nadu, pulikeshi, pulikeshi)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerDataExcelTest1(manipal, 1233423, manipalomps10002@gmail.com, 9876543210, yeshwanthapur, bangalore, bangalore, 56002...)">
+                  </a> <!-- registerDataExcelTest1(manipal, 1233423, manipalomps10002@gmail.com, 9876543210, yeshwanthapur, bangalore, bangalore, 56002...) -->
+                  <span class="method-name">registerDataExcelTest1</span>
+                  <span class="parameters">(manipal, 1233423, manipalomps10002@gmail.com, 9876543210, yeshwanthapur, bangalore, bangalore, 560022, India, Karnataka, manipal, manipal)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerDataExcelTest1(puli, keshi, puliomps10002@gmail.com, sfgdfgdf, chennai, chennai, chennai, 561321, India, Tamil Nadu...)">
+                  </a> <!-- registerDataExcelTest1(puli, keshi, puliomps10002@gmail.com, sfgdfgdf, chennai, chennai, chennai, 561321, India, Tamil Nadu...) -->
+                  <span class="method-name">registerDataExcelTest1</span>
+                  <span class="parameters">(puli, keshi, puliomps10002@gmail.com, sfgdfgdf, chennai, chennai, chennai, 561321, India, Tamil Nadu, pulikeshi, pulikeshi)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerDataExcelTest1(priya, prabhu, priyaomps10002@gmail.com, 8906754321, hyderabad, hyderabad, hyderabad, 9876547, India...)">
+                  </a> <!-- registerDataExcelTest1(priya, prabhu, priyaomps10002@gmail.com, 8906754321, hyderabad, hyderabad, hyderabad, 9876547, India...) -->
+                  <span class="method-name">registerDataExcelTest1</span>
+                  <span class="parameters">(priya, prabhu, priyaomps10002@gmail.com, 8906754321, hyderabad, hyderabad, hyderabad, 9876547, India, Telangana, priya, priya)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\SowmyaMP\AppData\Local\Temp\testng-eclipse-1682472609\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\SowmyaMP\git\sowmyamp\final-framework-testng\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.training.utility.ListenersImplemention&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.training.sanity.tests.RegisterTest&quot;/&gt;
+      &lt;class name=&quot;com.training.sanity.tests.RegisterExcelTest&quot;/&gt;
+      &lt;class name=&quot;com.training.sanity.tests.RegisterDBTest&quot;/&gt;
+      &lt;class name=&quot;com.training.sanity.tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.training.sanity.tests.RecoveryPasswordTest&quot;/&gt;
+      &lt;class name=&quot;com.training.sanity.tests.PreLoginCheckoutTest&quot;/&gt;
       &lt;class name=&quot;com.training.sanity.tests.LoginAndPlaceOrderTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (7 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(16);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginCheckout')
 data.setCell(0, 2, 'com.training.sanity.tests.LoginAndPlaceOrderTest')
-data.setCell(0, 3, 75378);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 3, 59761);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'preLoginCheckout')
+data.setCell(1, 2, 'com.training.sanity.tests.PreLoginCheckoutTest')
+data.setCell(1, 3, 39447);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'registerDataExcelTest1')
+data.setCell(2, 2, 'com.training.sanity.tests.RegisterExcelTest')
+data.setCell(2, 3, 16565);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'registerDBTest')
+data.setCell(3, 2, 'com.training.sanity.tests.RegisterDBTest')
+data.setCell(3, 3, 15495);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'registerDataExcelTest1')
+data.setCell(4, 2, 'com.training.sanity.tests.RegisterExcelTest')
+data.setCell(4, 3, 15306);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'registerDataExcelTest')
+data.setCell(5, 2, 'com.training.sanity.tests.RegisterExcelTest')
+data.setCell(5, 3, 15292);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'registerDataExcelTest')
+data.setCell(6, 2, 'com.training.sanity.tests.RegisterExcelTest')
+data.setCell(6, 3, 14973);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'registerDBTest')
+data.setCell(7, 2, 'com.training.sanity.tests.RegisterDBTest')
+data.setCell(7, 3, 14790);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'registerDataExcelTest')
+data.setCell(8, 2, 'com.training.sanity.tests.RegisterExcelTest')
+data.setCell(8, 3, 14338);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'registerDataExcelTest')
+data.setCell(9, 2, 'com.training.sanity.tests.RegisterExcelTest')
+data.setCell(9, 3, 14323);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validRegisterTest')
+data.setCell(10, 2, 'com.training.sanity.tests.RegisterTest')
+data.setCell(10, 3, 14257);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'registerDataExcelTest1')
+data.setCell(11, 2, 'com.training.sanity.tests.RegisterExcelTest')
+data.setCell(11, 3, 14008);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'recoverPasswordTest')
+data.setCell(12, 2, 'com.training.sanity.tests.RecoveryPasswordTest')
+data.setCell(12, 3, 11371);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'registerDataExcelTest1')
+data.setCell(13, 2, 'com.training.sanity.tests.RegisterExcelTest')
+data.setCell(13, 3, 10738);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'validLoginTest')
+data.setCell(14, 2, 'com.training.sanity.tests.LoginTest')
+data.setCell(14, 3, 8615);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'invalidLoginTest')
+data.setCell(15, 2, 'com.training.sanity.tests.LoginTest')
+data.setCell(15, 3, 8437);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.training.sanity.tests.LoginAndPlaceOrderTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.training.sanity.tests.RegisterTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpBeforeClass</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">15 ms</span>
+                <span class="method-start">17 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginCheckout</span>
-                <span class="method-start">15802 ms</span>
+                <span class="method-name">validRegisterTest</span>
+                <span class="method-start">15367 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">91183 ms</span>
+                <span class="method-start">29629 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.training.sanity.tests.RegisterExcelTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpBeforeClass</span>
+                <span class="method-start">31320 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">31870 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">registerDataExcelTest(sunil, nagaraj, sunilnagmps10002@gmail.com, 9876543210, yeshwanthapur, bangalore, bangalore, 560022,...)</span>
+                <span class="method-start">46012 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">61306 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">61991 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">registerDataExcelTest(manzoor, mehadi, mehadimps10002@gmail.com, 8906543210, electronic city, bangalore, bangalore, 560100...)</span>
+                <span class="method-start">76897 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">91221 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">91897 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">registerDataExcelTest(puli, keshi, pulimps10002@gmail.com, 6789043217, chennai, chennai, chennai, 561321, India, Tamil Nad...)</span>
+                <span class="method-start">107435 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">121774 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">122461 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">registerDataExcelTest(priya, prabhu, priyarajmps10002@gmail.com, 8906754321, hyderabad, hyderabad, hyderabad, 620102, Indi...)</span>
+                <span class="method-start">137141 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">152115 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">152849 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">registerDataExcelTest1(manipal, 1233423, manipalomps10002@gmail.com, 9876543210, yeshwanthapur, bangalore, bangalore, 56002...)</span>
+                <span class="method-start">167694 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">184260 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">184936 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">registerDataExcelTest1(manzoor, mehadi, manzoor, 8906543210, electronic city, bangalore, bangalore, 560100, India, Karnatak...)</span>
+                <span class="method-start">199829 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">210575 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">211355 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">registerDataExcelTest1(puli, keshi, puliomps10002@gmail.com, sfgdfgdf, chennai, chennai, chennai, 561321, India, Tamil Nadu...)</span>
+                <span class="method-start">228014 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">242023 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">242717 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">registerDataExcelTest1(priya, prabhu, priyaomps10002@gmail.com, 8906754321, hyderabad, hyderabad, hyderabad, 9876547, India...)</span>
+                <span class="method-start">257551 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">272858 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.training.sanity.tests.RegisterDBTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpBeforeClass</span>
+                <span class="method-start">273551 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">273872 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">registerDBTest(Sowmya, M P, sowmya10002@gmail.com, 9449590100, 123, 19th Main, Bangalore, 560045, India, Karnataka,...)</span>
+                <span class="method-start">289267 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">304763 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">305439 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">registerDBTest(Bhavana, S, bhavana10002@gmail.com, 9986590100, 784, 13th Main, Subash Nagar, 570001, India, Maharas...)</span>
+                <span class="method-start">320124 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">334914 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.training.sanity.tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpBeforeClass</span>
+                <span class="method-start">335563 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">335566 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validLoginTest</span>
+                <span class="method-start">351122 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">359738 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">361437 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidLoginTest</span>
+                <span class="method-start">376193 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">384631 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.training.sanity.tests.RecoveryPasswordTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpBeforeClass</span>
+                <span class="method-start">386290 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">386292 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">recoverPasswordTest</span>
+                <span class="method-start">400814 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">412186 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.training.sanity.tests.PreLoginCheckoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpBeforeClass</span>
+                <span class="method-start">413871 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">413872 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">preLoginCheckout</span>
+                <span class="method-start">428745 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">468193 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.training.sanity.tests.LoginAndPlaceOrderTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpBeforeClass</span>
+                <span class="method-start">469891 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">469893 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginCheckout</span>
+                <span class="method-start">485011 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">544774 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

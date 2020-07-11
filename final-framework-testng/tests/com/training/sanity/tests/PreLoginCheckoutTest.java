@@ -12,9 +12,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.training.generics.ScreenShot;
-import com.training.pom.LoginPOM;
 import com.training.pom.PreLoginCheckoutPOM;
-import com.training.pom.RegisterPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
@@ -82,6 +80,6 @@ public class PreLoginCheckoutTest {
 		screenShot.captureScreenShot("Pre_Login_Checkout");
 		
 		//Assert to check user lands in New Customer screen
-		Assert.assertEquals("New Customer", newCustText);
+		Assert.assertEquals("Checkout", newCustText);
 	}
 }

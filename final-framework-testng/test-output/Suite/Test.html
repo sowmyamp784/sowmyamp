@@ -1,0 +1,206 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Jul 11 18:07:05 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>546 seconds (546688 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.training.sanity.tests.RegisterExcelTest.registerDataExcelTest1()'><b>registerDataExcelTest1</b><br>Test class: com.training.sanity.tests.RegisterExcelTest<br>Parameters: manzoor, mehadi, manzoor, 8906543210, electronic city, bangalore, bangalore, 560100, India, Karnataka, manzoor, manzoor</td>
+<td><div><pre>java.lang.AssertionError: expected [Register Account] but found [Your Account Has Been Created!]
+	at com.training.sanity.tests.RegisterExcelTest.registerDataExcelTest1(RegisterExcelTest.java:148)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace729401599", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace729401599'><pre>java.lang.AssertionError: expected [Register Account] but found [Your Account Has Been Created!]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.training.sanity.tests.RegisterExcelTest.registerDataExcelTest1(RegisterExcelTest.java:148)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:588)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+	at org.testng.TestNG.runSuites(TestNG.java:1066)
+	at org.testng.TestNG.run(TestNG.java:1034)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>com.training.sanity.tests.RegisterExcelTest@6d2a209c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.training.sanity.tests.LoginTest.invalidLoginTest()'><b>invalidLoginTest</b><br>Test class: com.training.sanity.tests.LoginTest</td>
+<td></td>
+<td>8</td>
+<td>com.training.sanity.tests.LoginTest@161479c6</td></tr>
+<tr>
+<td title='com.training.sanity.tests.LoginAndPlaceOrderTest.loginCheckout()'><b>loginCheckout</b><br>Test class: com.training.sanity.tests.LoginAndPlaceOrderTest</td>
+<td></td>
+<td>59</td>
+<td>com.training.sanity.tests.LoginAndPlaceOrderTest@1e802ef9</td></tr>
+<tr>
+<td title='com.training.sanity.tests.PreLoginCheckoutTest.preLoginCheckout()'><b>preLoginCheckout</b><br>Test class: com.training.sanity.tests.PreLoginCheckoutTest</td>
+<td></td>
+<td>39</td>
+<td>com.training.sanity.tests.PreLoginCheckoutTest@7f010382</td></tr>
+<tr>
+<td title='com.training.sanity.tests.RecoveryPasswordTest.recoverPasswordTest()'><b>recoverPasswordTest</b><br>Test class: com.training.sanity.tests.RecoveryPasswordTest</td>
+<td></td>
+<td>11</td>
+<td>com.training.sanity.tests.RecoveryPasswordTest@4313f5bc</td></tr>
+<tr>
+<td title='com.training.sanity.tests.RegisterDBTest.registerDBTest()'><b>registerDBTest</b><br>Test class: com.training.sanity.tests.RegisterDBTest<br>Parameters: Sowmya, M P, sowmya10002@gmail.com, 9449590100, 123, 19th Main, Bangalore, 560045, India, Karnataka, Test1234, Test1234</td>
+<td></td>
+<td>15</td>
+<td>com.training.sanity.tests.RegisterDBTest@75329a49</td></tr>
+<tr>
+<td title='com.training.sanity.tests.RegisterDBTest.registerDBTest()'><b>registerDBTest</b><br>Test class: com.training.sanity.tests.RegisterDBTest<br>Parameters: Bhavana, S, bhavana10002@gmail.com, 9986590100, 784, 13th Main, Subash Nagar, 570001, India, Maharashtra, Test1234, Test1234</td>
+<td></td>
+<td>14</td>
+<td>com.training.sanity.tests.RegisterDBTest@75329a49</td></tr>
+<tr>
+<td title='com.training.sanity.tests.RegisterExcelTest.registerDataExcelTest()'><b>registerDataExcelTest</b><br>Test class: com.training.sanity.tests.RegisterExcelTest<br>Parameters: sunil, nagaraj, sunilnagmps10002@gmail.com, 9876543210, yeshwanthapur, bangalore, bangalore, 560022, India, Karnataka, manipal, manipal</td>
+<td></td>
+<td>15</td>
+<td>com.training.sanity.tests.RegisterExcelTest@6d2a209c</td></tr>
+<tr>
+<td title='com.training.sanity.tests.RegisterExcelTest.registerDataExcelTest()'><b>registerDataExcelTest</b><br>Test class: com.training.sanity.tests.RegisterExcelTest<br>Parameters: manzoor, mehadi, mehadimps10002@gmail.com, 8906543210, electronic city, bangalore, bangalore, 560100, India, Karnataka, manzoor, manzoor</td>
+<td></td>
+<td>14</td>
+<td>com.training.sanity.tests.RegisterExcelTest@6d2a209c</td></tr>
+<tr>
+<td title='com.training.sanity.tests.RegisterExcelTest.registerDataExcelTest()'><b>registerDataExcelTest</b><br>Test class: com.training.sanity.tests.RegisterExcelTest<br>Parameters: puli, keshi, pulimps10002@gmail.com, 6789043217, chennai, chennai, chennai, 561321, India, Tamil Nadu, pulikeshi, pulikeshi</td>
+<td></td>
+<td>14</td>
+<td>com.training.sanity.tests.RegisterExcelTest@6d2a209c</td></tr>
+<tr>
+<td title='com.training.sanity.tests.RegisterExcelTest.registerDataExcelTest()'><b>registerDataExcelTest</b><br>Test class: com.training.sanity.tests.RegisterExcelTest<br>Parameters: priya, prabhu, priyarajmps10002@gmail.com, 8906754321, hyderabad, hyderabad, hyderabad, 620102, India, Telangana, priya, priya</td>
+<td></td>
+<td>14</td>
+<td>com.training.sanity.tests.RegisterExcelTest@6d2a209c</td></tr>
+<tr>
+<td title='com.training.sanity.tests.RegisterExcelTest.registerDataExcelTest1()'><b>registerDataExcelTest1</b><br>Test class: com.training.sanity.tests.RegisterExcelTest<br>Parameters: manipal, 1233423, manipalomps10002@gmail.com, 9876543210, yeshwanthapur, bangalore, bangalore, 560022, India, Karnataka, manipal, manipal</td>
+<td></td>
+<td>16</td>
+<td>com.training.sanity.tests.RegisterExcelTest@6d2a209c</td></tr>
+<tr>
+<td title='com.training.sanity.tests.RegisterExcelTest.registerDataExcelTest1()'><b>registerDataExcelTest1</b><br>Test class: com.training.sanity.tests.RegisterExcelTest<br>Parameters: puli, keshi, puliomps10002@gmail.com, sfgdfgdf, chennai, chennai, chennai, 561321, India, Tamil Nadu, pulikeshi, pulikeshi</td>
+<td></td>
+<td>14</td>
+<td>com.training.sanity.tests.RegisterExcelTest@6d2a209c</td></tr>
+<tr>
+<td title='com.training.sanity.tests.RegisterExcelTest.registerDataExcelTest1()'><b>registerDataExcelTest1</b><br>Test class: com.training.sanity.tests.RegisterExcelTest<br>Parameters: priya, prabhu, priyaomps10002@gmail.com, 8906754321, hyderabad, hyderabad, hyderabad, 9876547, India, Telangana, priya, priya</td>
+<td></td>
+<td>15</td>
+<td>com.training.sanity.tests.RegisterExcelTest@6d2a209c</td></tr>
+<tr>
+<td title='com.training.sanity.tests.LoginTest.validLoginTest()'><b>validLoginTest</b><br>Test class: com.training.sanity.tests.LoginTest</td>
+<td></td>
+<td>8</td>
+<td>com.training.sanity.tests.LoginTest@161479c6</td></tr>
+<tr>
+<td title='com.training.sanity.tests.RegisterTest.validRegisterTest()'><b>validRegisterTest</b><br>Test class: com.training.sanity.tests.RegisterTest</td>
+<td></td>
+<td>14</td>
+<td>com.training.sanity.tests.RegisterTest@5e316c74</td></tr>
+</table><p>
+</body>
+</html>

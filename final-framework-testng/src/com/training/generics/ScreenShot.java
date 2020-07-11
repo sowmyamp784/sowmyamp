@@ -3,6 +3,7 @@ package com.training.generics;
 import java.io.File;
 import java.io.IOException;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.GregorianCalendar;
 
 import org.apache.commons.io.FileUtils;
@@ -30,7 +31,7 @@ public class ScreenShot {
 	public void captureScreenShot(){
 		
 		// to be changed 
-		String path = "C:\\Users\\SowmyaMP\\eclipse-workspace\\SeleniumProjectManipal\\RetailApp_ScreenShots\\";
+		String path =  ".\\ScreenShots\\";
 		String fileName ="";
 
 		GregorianCalendar calendar = new GregorianCalendar(); 
@@ -66,17 +67,19 @@ public class ScreenShot {
 
 	public void captureScreenShot(String fileName){
 		
-		String path =  "C:\\Users\\SowmyaMP\\eclipse-workspace\\SeleniumProjectManipal\\RetailApp_ScreenShots\\";
+		String path =  ".\\ScreenShots\\";
 	
 		// 1. create file 
 		// 2. capture screenshot from selenium 
 		// 3. store it in physical driver 
 		
 		try {
+			Date d = new Date();
+			String dateAppend = d.toString().replace(":", "_").replace(" ", "_");
 			TakesScreenshot takeScreenShot  = (TakesScreenshot) driver; 
 			File file = takeScreenShot.getScreenshotAs(OutputType.FILE);
 			
-			FileUtils.copyFile(file, new File(path +fileName+".png"));
+			FileUtils.copyFile(file, new File(path + fileName + "_" + dateAppend + ".png"));
 		} catch (WebDriverException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

@@ -1,9 +1,6 @@
 package com.training.readexcel;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-
-import org.testng.annotations.DataProvider;
 
 import jxl.Sheet;
 import jxl.Workbook;

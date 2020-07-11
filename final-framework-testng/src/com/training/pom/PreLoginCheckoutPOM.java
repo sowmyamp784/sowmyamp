@@ -1,16 +1,11 @@
 package com.training.pom;
 
-import java.util.Set;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PreLoginCheckoutPOM {
 	private WebDriver driver;
@@ -118,6 +113,7 @@ public class PreLoginCheckoutPOM {
 	
 	//Method to check and get Text of New customer element if the user lands in Login page
 	public String newCustomerText() {
-		return this.newCustomer.getText();
+		//return this.newCustomer.getText();
+		return driver.getTitle();
 	}
 }
